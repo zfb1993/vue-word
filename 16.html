@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app-16">
+		{{number+1}}
+		{{ok?'yes':'no'}}
+		{{message.split('').reverse().join('')}}
+		<div v-bind:id="'list-'+id">
+		</div>
+	</div>
+	<script type="text/javascript">
+		var vm =  new Vue({
+			el:"#app-16",
+			data:{
+				number:1,
+				ok:'yes',
+				message:'徐顺',
+				id:1111
+			}
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="app-11">
+		
+	</div>
+	<script type="text/javascript">
+		var data = {a:1}
+		var vm = new Vue({
+			el:'#app-11',
+			data:data
+		})
+
+		vm.$watch('a',function(newValue,oldValue){
+			console.log('代表月亮消灭你')
+		})
+	</script>
+</body>
+</html>
